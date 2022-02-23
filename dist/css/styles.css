@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #DDDDDD;
+  background-color: #444444; }
+
+a {
+  text-decoration: none;
+  color: #DDDDDD; }
+
+.primary-color {
+  color: #3aca6a; }
+
+#home-header-wrapper {
+  max-width: 1300px;
+  margin: auto; }
+
+.link {
+  color: #DDDDDD; }
+  .link:hover {
+    color: #3aca6a; }
+
+.link-selected {
+  color: #3aca6a; }
+
+.btn {
+  background-color: #3aca6a;
+  color: #DDDDDD;
+  border-radius: 1rem; }
+  .btn:hover {
+    background-color: #2ca554; }
+
+#home-header {
+  height: 85vh;
+  background-image: radial-gradient(farthest-corner at 100% 0%, #444444, #222222); }
+  #home-header::before {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    background: url(../img/pattern6.png) no-repeat center center/cover;
+    opacity: 0.05;
+    z-index: 0; }
+  #home-header * {
+    z-index: 1; }
+  #home-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+  #home-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem; }
+    #home-header-top p:first-child {
+      font-size: 2.5rem; }
+    #home-header-top ul {
+      display: flex;
+      list-style: none; }
+      #home-header-top ul li {
+        padding: 1rem; }
+        #home-header-top ul li a {
+          font-size: 1.1rem; }
+  #home-header-content {
+    display: flex;
+    height: 100%; }
+    #home-header-content-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #home-header-content-left h1 {
+        white-space: pre-line;
+        font-size: 4rem;
+        text-shadow: 3px 3px 4px #111111; }
+      #home-header-content-left p {
+        margin-top: 1rem; }
+    #home-header-content-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      #home-header-content-right img {
+        width: 70%;
+        border-radius: 50%;
+        border: #DDDDDD 0.5rem solid;
+        box-shadow: 3px 3px 4px #111111; }

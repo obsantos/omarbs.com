@@ -1,0 +1,32 @@
+@import 'variables';
+
+.primary-color {
+    color: $primary-color;
+}
+
+%container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.link {
+    color: $text-light-color;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+.link-selected {
+    color: $primary-color;
+}
+
+.btn {
+    background-color: $primary-color;
+    color: $text-light-color;
+    border-radius: 1rem;
+
+    &:hover {
+        background-color: darken($primary-color, 10%)
+    }
+}

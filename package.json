@@ -1,0 +1,19 @@
+{
+  "name": "omarbs.com",
+  "version": "1.0.0",
+  "description": "Personal website & Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "styles": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "personal",
+    "web",
+    "portfolio"
+  ],
+  "author": "Omar BS",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,20 @@
+// Global stuff
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $text-light-color;
+    background-color: $secondary-background;
+}
+
+a {
+    text-decoration: none;
+    color: $text-light-color;
+}
