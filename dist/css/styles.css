@@ -16,7 +16,7 @@ a {
 .primary-color {
   color: #3aca6a; }
 
-#home-header-wrapper, #home-portfolio-wrapper, #footer-wrapper {
+#home-header-wrapper, #home-portfolio-wrapper, #home-about-wrapper, #footer-wrapper {
   max-width: 1300px;
   margin: auto; }
 
@@ -138,15 +138,17 @@ a {
     flex: 2 0;
     padding: 2rem;
     background-color: #2a2a2a;
-    border-radius: 0.7rem 0.7rem 0.7rem 0rem;
-    font-weight: 300; }
+    border-radius: 0rem 0.7rem 0.7rem 0rem;
+    font-weight: 300;
+    text-align: justify; }
     .portfolio-row-description ul {
       margin-top: 1.3rem;
       list-style-position: inside; }
       .portfolio-row-description ul li {
         line-height: 1.2;
         margin: 0.5rem 0rem;
-        font-weight: 300; }
+        font-weight: 300;
+        text-align: left; }
   .portfolio-row-title {
     font-size: 2.5rem;
     margin: 1.5rem 0rem; }
@@ -181,6 +183,25 @@ a {
   border-radius: 0.3rem;
   font-weight: 500; }
 
+#home-about {
+  background-color: #666666; }
+  #home-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem; }
+  #home-about-content {
+    padding: 2rem; }
+    #home-about-content p {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 100;
+      text-align: justify; }
+    #home-about-content img {
+      float: right;
+      width: 25vw;
+      margin-left: 2rem; }
+
 #footer {
   padding: 1.5rem;
   background-color: #222222; }
@@ -201,8 +222,18 @@ a {
   #home-portfolio-wrapper {
     padding: 2rem 1rem; }
   .portfolio-row {
-    flex-direction: column; } }
+    flex-direction: column; }
+    .portfolio-row-description {
+      border-radius: 0rem 0rem 0.7rem 0.7rem; }
+  .portfolio-row-image-screenshot-wrapper {
+    display: none; }
+  #home-about-content img {
+    width: 100%;
+    margin-bottom: 2rem; }
+  #footer-wrapper {
+    flex-direction: column;
+    gap: 1rem; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   #home-portfolio-wrapper {
     padding: 2rem 3rem; } }

@@ -2,6 +2,8 @@
 @import 'global';
 @import 'utils';
 
+// Header section
+
 #home-header {
     height: 85vh;
     background-image: radial-gradient(farthest-corner at 100% 0%, $secondary-background, $primary-background);
@@ -107,6 +109,8 @@
     }
 }
 
+// Portfolio section
+
 #home-portfolio {
     &-wrapper {
         @extend %container;
@@ -145,8 +149,9 @@
         flex: 2 0;
         padding: 2rem;
         background-color: #2a2a2a;
-        border-radius: 0.7rem 0.7rem 0.7rem 0rem;
+        border-radius: 0rem 0.7rem 0.7rem 0rem;
         font-weight: 300;
+        text-align: justify;
 
         ul {
             margin-top: 1.3rem;
@@ -156,6 +161,7 @@
                 line-height: 1.2;
                 margin: 0.5rem 0rem;
                 font-weight: 300;
+                text-align: left;
             }
         }
     }
@@ -199,6 +205,39 @@
     border-radius: 0.3rem;
     font-weight: 500;
 }
+
+// About me section
+
+#home-about {
+    background-color: $tertiary-background;
+
+    &-wrapper {
+        @extend %container;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0rem;
+    }
+
+    &-content {        
+        padding: 2rem;
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.4;
+            font-weight: 100;
+            text-align: justify;
+        }
+
+        img {
+            float: right;
+            width: 25vw;
+            margin-left: 2rem;
+        }
+    }
+}
+
+// Footer section
 
 #footer {
     padding: 1.5rem;
