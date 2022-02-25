@@ -28,9 +28,15 @@
                         I'm Omar,
                         Software Developer
                     </h1>
-                    <p>Currently working on the Android Core team @ Tumblr working on performance</p>
+                    <p>Currently working on the Android Core team @ Tumblr focusing on performance</p>
                     <div id="home-header-content-left-lang">
-                        <i class="fab fa-twitter fa-2x"></i>
+                        <img src="img/java.svg" alt="Java">
+                        <img src="img/kotlin.svg" alt="Kotlin">
+                        <img src="img/android.svg" alt="Android">
+                        <img src="img/python.svg" alt="Python">
+                        <img src="img/html5.svg" alt="HTML">
+                        <img src="img/css3.svg" alt="CSS">
+                        <img src="img/javascript.svg" alt="Javascript">
                     </div>
                     <a href="#" class="btn">Contact Me &nbsp; &#10140;</a>
                 </div>
@@ -48,16 +54,115 @@
                     <div class="portfolio-row-image">
                         <img src="img/tumblr-icon.png" class="portfolio-logo" alt="">
                         <div class="portfolio-row-image-screenshot-wrapper">
-                            <img src="img/tumblr-explore.png" class="portfolio-screenshot" alt="">
+                            <img src="img/tumblr-explore.png" class="portfolio-screenshot" alt="Tumblr screenshot">
                         </div>                        
                     </div>
                     <div class="portfolio-row-description">
                         <h2 class="portfolio-row-title">Tumblr</h2>
+                        <p class="portfolio-row-timeframe">2019 - Present</p>
+                        <p>Part of Android Core team I'm in charge of the stability, performance and developer happiness for Tumblr's Android app. Some of the things I've worked on are:</p>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nisi.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nisi.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nisi.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nisi.</li>
+                            <li>Reduce <strong class="primary-color">startup time</strong> (cold start) of the app.</li>
+                            <li>Built tools to monitor crashes and keep <strong class="primary-color">% of crash free sessions</strong> in check.</li>
+                            <li>Work on <strong class="primary-color">modularizing the codebase</strong> to reduce build times as well as build a telemetry system to monitor progress (custom version of Gradle Enterprise)</li>
+                            <!-- <li>Built tooling to <strong class="primary-color">help the team work faster</strong>, like dashboards for third party libraries upddates, automatic filtering on Firebase based on our alpha/beta builds, and others.</li> -->
+                            <li>Created <strong class="primary-color">custom lint rules</strong> to enforce architectural best practices</li>
+                            <li>Spearheaded usage of <strong class="primary-color">coroutines</strong> in the code base</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="portfolio-row-image">
+                        <img src="img/pizza-icon.png" class="portfolio-logo" alt="">
+                        <div class="portfolio-row-image-screenshot-wrapper">
+                            <img src="img/pizza-screen.png" class="portfolio-screenshot" alt="Tumblr screenshot">
+                        </div>                        
+                    </div>
+                    <div class="portfolio-row-description">
+                        <h2 class="portfolio-row-title">Pizza Pizza</h2>
+                        <p class="portfolio-row-timeframe">2018 - 2019</p>
+                        <p>Initial Android developer of the order/delivery app for the most popular pizza brand in Canada. Some of the things I've worked on are:</p>
+                        <ul>
+                            <li>Built whole <strong class="primary-color">UI</strong> of the app (30+ screens).</li>
+                            <li>Dynamic & <strong class="primary-color">backend driven UI</strong> to adapt to the hundres of pizza permutations possible.</li>
+                            <li><strong class="primary-color">Payment integration</strong> with multiple providers as well as gift card options.</li>
+                            <li><strong class="primary-color">Third party login</strong> integration (Google/Apple). </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="portfolio-row-image">
+                        <img src="img/pc-icon.png" class="portfolio-logo" alt="">
+                        <div class="portfolio-row-image-screenshot-wrapper">
+                            <img src="img/pc-screen.png" class="portfolio-screenshot" alt="Tumblr screenshot">
+                        </div>                        
+                    </div>
+                    <div class="portfolio-row-description">
+                        <h2 class="portfolio-row-title">PC Vida</h2>
+                        <p class="portfolio-row-timeframe">2018 - 2019</p>
+                        <p><strong>(App never released)</strong> Initial Android Developer of the prescription refill and doctor videocall app for one of the biggest Canadian pharmacy groups. Some of the things I've worked on are:</p>
+                        <ul>
+                            <li>Developed <strong class="primary-color">okta's Oauth</strong> implementation as well as two factor authentication.</li>
+                            <li>Created complex videocall system with waitroom using <strong class="primary-color"> WebRTC and sockets</strong> to connect patients with doctors.</li>
+                            <li>Architected app's foundation based on <strong class="primary-color">MVVM + Data binding</strong> as well as Kotlin.</li>
+                            <li>Completely <strong class="primary-color">reactive and reusable UI</strong>. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="portfolio-row-image">
+                        <img src="img/olg-icon.png" class="portfolio-logo" alt="">
+                        <div class="portfolio-row-image-screenshot-wrapper">
+                            <img src="img/olg-screen.png" class="portfolio-screenshot" alt="Tumblr screenshot">
+                        </div>                        
+                    </div>
+                    <div class="portfolio-row-description">
+                        <h2 class="portfolio-row-title">OLG Lottery</h2>
+                        <p class="portfolio-row-timeframe">2017 - 2018</p>
+                        <p>Only Android developer of the official lottery app for Ontario. Utility App to scan lottery tickets for prizes, check draw results, etc... Some of the things I've worked on are:</p>
+                        <ul>
+                            <li>Custom logic to <strong class="primary-color">decode datamatrix barcodes</strong> present in the tickets.</li>
+                            <li>First class <strong class="primary-color">animations</strong> and transitions.</li>
+                            <li>High camera/scanner <strong class="primary-color">performance</strong> with autofocus logic, able to scan in ms.</li>
+                            <li>Dynamic <strong class="primary-color">theming</strong> system to accomodate more than 10+ lottery games, along with totally customizable & reusable UI. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="portfolio-row-image">
+                        <img src="img/rbc-icon.png" class="portfolio-logo" alt="">
+                        <div class="portfolio-row-image-screenshot-wrapper">
+                            <img src="img/rbc-screen.png" class="portfolio-screenshot" alt="Tumblr screenshot">
+                        </div>                        
+                    </div>
+                    <div class="portfolio-row-description">
+                        <h2 class="portfolio-row-title">RBC Rewards</h2>
+                        <p class="portfolio-row-timeframe">2016 - 2017</p>
+                        <p>Android developer of a team of 2 developing a rewards app for one of the biggest Canadian banks. Some of the things I've worked on are:</p>
+                        <ul>
+                            <li><strong class="primary-color">Designed & Architected</strong> the foundation of the app using Viper architectural pattern.</li>
+                            <li>Complex api based on <strong class="primary-color"> webviews & javascript injection</strong> as well as SSO and cookie management.</li>
+                            <li>Best <strong class="primary-color">security and encryption</strong> practices for a bank-grade application.</li>
+                            <li>Beautiful <strong class="primary-color">charts and dashboards</strong> to present user balance and points remaining/spent. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portfolio-row">
+                    <div class="portfolio-row-image">
+                        <img src="img/realtor-icon.png" class="portfolio-logo" alt="">
+                        <div class="portfolio-row-image-screenshot-wrapper">
+                            <img src="img/realtor-screen.png" class="portfolio-screenshot" alt="Tumblr screenshot">
+                        </div>                        
+                    </div>
+                    <div class="portfolio-row-description">
+                        <h2 class="portfolio-row-title">Realtor.ca</h2>
+                        <p class="portfolio-row-timeframe">2015 - 2016</p>
+                        <p>Android developer of a team of 2 developing a real state searching app for CREA, the biggest real state association in Canada. Some of the things I've worked on are:</p>
+                        <ul>
+                            <li>Custom <strong class="primary-color">performant clustering</strong> of datasets of hundreds of properties.</li>
+                            <li><strong class="primary-color">Dynamic localization</strong> system where every single string of the app comes from the backend.</li>
+                            <li><strong class="primary-color">Phone & Tablet</strong> development in parallel on record time deadlines.</li>
+                            <li>Dynamic <strong class="primary-color">theming</strong> system to accomodate more than 10+ lottery games, along with totally customizable & reusable UI. </li>
                         </ul>
                     </div>
                 </div>

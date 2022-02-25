@@ -1,1 +1,30 @@
 // Media queries for various devices
+
+// Phones
+@media screen and (max-width: 600px) {
+    
+    #home-header {
+        &-top {
+            flex-direction: column;
+        }
+    }
+
+    #home-portfolio {
+        &-wrapper {
+            padding: 2rem 1rem;
+        }
+    }
+
+    .portfolio-row {
+        flex-direction: column;
+    }
+}
+
+// Tablets
+@media screen and (max-width: 768px) {
+    #home-portfolio {
+        &-wrapper {
+            padding: 2rem 3rem;
+        }
+    }
+}
